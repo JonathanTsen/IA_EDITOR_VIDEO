@@ -1,0 +1,1 @@
+Então, passando um pouco por o que eu fiz, basicamente esse é o meu código main, que ele basicamente roda todos os outros códigos que eu criei. Mais uma parte que eu acho interessante de falar é o que eu fiz no prompt.
