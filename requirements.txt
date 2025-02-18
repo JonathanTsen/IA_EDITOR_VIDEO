@@ -1,12 +1,24 @@
-moviepy>=1.0.3
+# Dependências base
 python-dotenv>=0.19.0
 openai>=0.27.0
-ffmpeg-python>=0.2.0
-pydub>=0.25.1
-argparse>=1.4.0
 flask==2.0.1
 flask-cors==3.0.10
 werkzeug==2.0.1
 gunicorn==20.1.0
 pyOpenSSL==23.2.0
 cryptography==41.0.1
+
+# Dependências para processamento de mídia
+numpy>=1.22.0
+decorator>=4.4.2
+imageio>=2.19.3
+imageio-ffmpeg>=0.4.7
+tqdm>=4.64.1
+requests>=2.28.1
+proglog>=0.1.10
+moviepy>=1.0.3
+ffmpeg-python>=0.2.0
+pydub>=0.25.1
+
+# Outras dependências
+argparse>=1.4.0

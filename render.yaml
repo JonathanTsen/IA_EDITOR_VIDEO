@@ -2,8 +2,12 @@ services:
   - type: web
     name: ia-editor-video
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    buildCommand: |
+      # Instala dependências do sistema
+      apt-get update && apt-get install -y ffmpeg python3-dev
+      # Instala dependências Python
+      pip install --no-cache-dir -r requirements.txt
+    startCommand: gunicorn app:app --timeout 300
     plan: free
     autoDeploy: true
     envVars:
